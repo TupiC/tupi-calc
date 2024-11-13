@@ -22,14 +22,15 @@ export function activate(context: vscode.ExtensionContext) {
 		editor.setDecorations(decorationType, decorations);
 	};
 
+	updateDecorations();
+
 	context.subscriptions.push(
-		vscode.workspace.onDidOpenTextDocument(updateDecorations),
 		vscode.window.onDidChangeActiveTextEditor(updateDecorations),
 		vscode.workspace.onDidChangeTextDocument(event => {
-			if (vscode.window.activeTextEditor && event.document === vscode.window.activeTextEditor.document) {
+			if (event.document === vscode.window.activeTextEditor?.document) {
 				updateDecorations();
 			}
-		}),
+		})
 	);
 }
 
