@@ -14,7 +14,22 @@
   ],
   "main": "./dist/extension.js",
   "contributes": {
-    "commands": []
+    "commands": [
+      {
+        "command": "tupicalc.toggleExtension",
+        "title": "Toggle Extension"
+      }
+    ],
+    "configuration": {
+      "title": "TupiCalc",
+      "properties": {
+        "tupicalc.isDisabled": {
+          "type": "boolean",
+          "default": false,
+          "description": "Disable the extension"
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
