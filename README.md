@@ -26,11 +26,10 @@ This extension contributes the following settings:
 1. Install the TupiCalc extension from the VS Code Marketplace.
 2. Open a file in VS Code.
 3. Type a mathematical expression in a code comment, for example:
+
     ```javascript
     // 2 + 2 = ?
     ```
-
-````
 
 4. The extension will automatically calculate the result and display it inline:
     ```javascript
@@ -54,6 +53,10 @@ To toggle the extension on/off:
 -   Inline display of results
 -   Toggle functionality
 
+### 1.0.1
+
+-   Added icon to the extension
+
 ---
 
 ## Contributing
@@ -65,7 +68,3 @@ If you have suggestions for improvements or encounter any issues, please file an
 This extension is licensed under the [License](license.md).
 
 **Enjoy calculating with TupiCalc!**
-
-```
-
-````
