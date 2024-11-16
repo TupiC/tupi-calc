@@ -1,4 +1,6 @@
 import * as vscode from 'vscode';
+import * as acorn from 'acorn';
+import * as math from 'mathjs';
 
 export const calculateExpression = (text: string, document: vscode.TextDocument): vscode.DecorationOptions[] => {
     const regex = /\b\d+(?:\s*[+\-*/]\s*\d+)+\b/g;
@@ -30,3 +32,23 @@ export const calculateExpression = (text: string, document: vscode.TextDocument)
         };
     });
 };
+
+export const extractVariables = (code: string): { [key: string]: any } => {
+    const variables: { [key: string]: any } = {};
+    const ast = acorn.parse(code, { ecmaVersion: 2020 });
+
+    ast.body.forEach((node: any) => {
+        if (node.type === 'VariableDeclaration') {
+            node.declarations.forEach((declaration: any) => {
+                if (declaration.init && declaration.id.type === 'Identifier') {
+                    try {
+                        variables[declaration.id.name] = math.evaluate(declaration.init.raw);
+                    } catch (error) {
+                    }
+                }
+            });
+        }
+    });
+
+    return variables;
+}
