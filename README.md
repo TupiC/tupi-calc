@@ -1,71 +1,71 @@
-# tupi-calc README
+# TupiCalc
 
-This is the README for your extension "tupi-calc". After writing up a brief description, we recommend including the following sections.
+TupiCalc is a Visual Studio Code extension that provides real-time calculation of mathematical expressions within your code comments.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+-   Automatically calculates mathematical expressions in code comments
+-   Displays results inline without modifying your code
+-   Supports basic arithmetic operations and common mathematical functions
+-   Can be easily toggled on/off
 
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+![TupiCalc in action](images/demo.gif)
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+This extension requires Visual Studio Code version 1.60.0 or higher.
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
 This extension contributes the following settings:
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+-   `tupicalc.isDisabled`: Enable/disable the TupiCalc extension.
+
+## How to Use
+
+1. Install the TupiCalc extension from the VS Code Marketplace.
+2. Open a file in VS Code.
+3. Type a mathematical expression in a code comment, for example:
+    ```javascript
+    // 2 + 2 = ?
+    ```
+
+````
+
+4. The extension will automatically calculate the result and display it inline:
+    ```javascript
+    // 2 + 2 = 4
+    ```
+
+To toggle the extension on/off:
+
+1. Open the Command Palette (Ctrl+Shift+P or Cmd+Shift+P)
+2. Type "Toggle TupiCalc Extension" and select it
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+-   Complex mathematical functions may not be supported.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+-   Basic arithmetic operations support
+-   Inline display of results
+-   Toggle functionality
 
 ---
 
-## Following extension guidelines
+## Contributing
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+If you have suggestions for improvements or encounter any issues, please file an issue on our [GitHub repository](https://github.com/TupiC/tupi-calc).
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+## License
 
-## Working with Markdown
+This extension is licensed under the [License](license.md).
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+**Enjoy calculating with TupiCalc!**
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+```
 
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+````
