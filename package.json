@@ -3,6 +3,7 @@
   "displayName": "tupi-calc",
   "description": "See the result of your calculations dire",
   "version": "1.0.0",
+  "publisher": "TupiC",
   "engines": {
     "vscode": "^1.95.0"
   },
@@ -61,5 +62,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/TupiC/tupi-calc"
-  }
+  },
+  "icon": "images/icon.png"
 }
