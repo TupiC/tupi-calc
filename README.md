@@ -65,6 +65,10 @@ To toggle the extension on/off:
 
 -   Fixed issue with toggling extension
 
+### 1.1.0
+
+-   Added support for decimal numbers
+
 ---
 
 ## Contributing

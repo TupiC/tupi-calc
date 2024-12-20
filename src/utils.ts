@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 
 export const calculateExpression = (text: string, document: vscode.TextDocument): vscode.DecorationOptions[] => {
-    const regex = /\b\d+(?:\s*[+\-*/]\s*\d+)+\b/g;
+    const regex = /(\d|\.)+(?:\s*[+\-*/]\s*(\d|\.)+)+/g;
     const matches = [...text.matchAll(regex)];
 
     return matches.map(match => {
@@ -14,7 +14,7 @@ export const calculateExpression = (text: string, document: vscode.TextDocument)
                 formula
                     .replace(/\s/g, '')
                     .replace(/([+\-*/])/g, ' $1 ')
-            );
+            ).toFixed(5).replace(/\.00000$/, '');
         } catch (error) {
             result = 'Error';
         }
