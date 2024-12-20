@@ -14,6 +14,7 @@ export function activate(context: vscode.ExtensionContext) {
 		config.update('isDisabled', !currentState, true).then(() => {
 			vscode.window.showInformationMessage(`TupiCalc extension is now ${!currentState ? 'disabled' : 'enabled'}`);
 		});
+		vscode.window.activeTextEditor?.setDecorations(decorationType, []);
 	});
 
 	let decorationType: vscode.TextEditorDecorationType;

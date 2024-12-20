@@ -2,7 +2,7 @@
   "name": "tupi-calc",
   "displayName": "tupi-calc",
   "description": "See the result of your calculations directly next to the expression",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publisher": "TupiC",
   "engines": {
     "vscode": "^1.95.0"

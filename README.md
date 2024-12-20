@@ -57,6 +57,14 @@ To toggle the extension on/off:
 
 -   Added icon to the extension
 
+### 1.0.2
+
+-   Changed readme file
+
+### 1.0.3
+
+-   Fixed issue with toggling extension
+
 ---
 
 ## Contributing
