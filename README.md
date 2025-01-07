@@ -69,6 +69,10 @@ To toggle the extension on/off:
 
 -   Added support for decimal numbers
 
+### 1.1.1
+
+-   Decreased engine version to 1.93.0
+
 ---
 
 ## Contributing
