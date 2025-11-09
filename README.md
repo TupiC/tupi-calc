@@ -73,6 +73,10 @@ To toggle the extension on/off:
 
 -   Decreased engine version to 1.93.0
 
+### 1.1.2
+
+-   Fixed issue with light mode + remove error
+
 ---
 
 ## Contributing
